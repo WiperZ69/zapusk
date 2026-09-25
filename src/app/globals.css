@@ -1,0 +1,159 @@
+@font-face {
+	font-family: 'Impact';
+	src: url('/fonts/Impact.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-Light.woff2') format('woff2'),
+		url('/fonts/Pinnacle-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-LightOblique.woff2') format('woff2'),
+		url('/fonts/Pinnacle-LightOblique.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-Regular.woff2') format('woff2'),
+		url('/fonts/Pinnacle-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-RegularOblique.woff2') format('woff2'),
+		url('/fonts/Pinnacle-RegularOblique.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-Medium.woff2') format('woff2'),
+		url('/fonts/Pinnacle-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-MediumOblique.woff2') format('woff2'),
+		url('/fonts/Pinnacle-MediumOblique.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-DemiBold.woff2') format('woff2'),
+		url('/fonts/Pinnacle-DemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-DemiBoldOblique.woff2') format('woff2'),
+		url('/fonts/Pinnacle-DemiBoldOblique.woff') format('woff');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-Bold.woff2') format('woff2'),
+		url('/fonts/Pinnacle-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-BoldOblique.woff2') format('woff2'),
+		url('/fonts/Pinnacle-BoldOblique.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-ExtraBold.woff2') format('woff2'),
+		url('/fonts/Pinnacle-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Pinnacle';
+	src:
+		url('/fonts/Pinnacle-ExtraBoldOblique.woff2') format('woff2'),
+		url('/fonts/Pinnacle-ExtraBoldOblique.woff') format('woff');
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+}
+
+@import 'tailwindcss';
+
+@theme {
+	--font-impact: 'Impact', sans-serif;
+	--font-pinnacle: 'Pinnacle', sans-serif;
+
+	--color-space: #0f022d;
+	--color-space-light: #3b19b6;
+	--color-header: rgba(239, 239, 239, 0.4);
+	--color-neon: #00d5b0;
+	--color-white: #efefef;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	min-height: 100vh;
+	overflow-x: hidden;
+	background: var(--color-space);
+	color: var(--color-white);
+	font-family: var(--font-pinnacle);
+}
